@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    
+    <link rel="stylesheet" type="text/css"  href="navbar.css"> 
+    <link rel="stylesheet" type="text/css"  href="card.css"> 
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+   
+</head>
+<body>
+  <section class="home">
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Jingshuai XU</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+<div class="card">
+  <div class="card_img">
+    <img src="myphoto.jpg" alt="my photo" style="width: 450px; height: 450px; border-radius: 15px; padding-right: 125px;
+    padding: 20px;">
+  </div>
+  <div class="personal_text">
+    <h6>Hello Everybody, i am</h6>
+		<h3>Jingshuai XU</h3>
+		<h4>Junior Web Developer</h4>
+    <p>Welcome to my personal web page!</p>
+    <ul class="personal_list">
+      <li>
+      <svg class="icon"><use xlink:href="#lnr-calendar-full"></use></svg> 
+      <span class="value">15th Nov, 1992</span>
+      </li>
+      <li>
+        <svg class="icon"><use xlink:href="#lnr-phone-handset"></use></svg> 
+        <span class="value">+61 414 051 021</span>
+        </li>
+
+        <li>
+          <svg class="icon"><use xlink:href="#lnr-envelope"></use></svg> 
+          <span class="value">xujingshuai@gmail.com</span>
+        </li>
+
+        <li>
+          <svg class="icon"><use xlink:href="#lnr-home"></use></svg> 
+          <span class="value">13 Rosedale Ave, Glenhuntly,3163</span>
+        </li>
+
+    </ul>
+  
+  </div>
+</section>
+
+
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="navbar.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+</body>
+</html>
