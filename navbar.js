@@ -15,3 +15,7 @@ $(window).scroll(function () {
     $(".nav").removeClass("affix");
   }
 });
+
+$(".nav__item").click(function () {
+  $(".navTrigger").toggleClass("active");
+});

@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <section class="main">
+    <div class="main">
       <nav class="nav">
         <div class="container">
           <div class="logo">
@@ -20,10 +20,14 @@
           </div>
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-              <li><a href="Home">Home</a></li>
-              <li><a href="Resume">Resume</a></li>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">Contact</a></li>
+              <li>
+                <a class="navbar__item navbar__item--active" href="Home"
+                  >Home</a
+                >
+              </li>
+              <li><a class="navbar__item" href="Resume">Resume</a></li>
+              <li><a class="navbar__item" href="#">Project</a></li>
+              <li><a class="navbar__item" href="#">Contact</a></li>
             </ul>
           </div>
           <span class="navTrigger">
@@ -34,149 +38,151 @@
         </div>
       </nav>
 
-      <div id="Home" class="card">
-        <div class="card_img">
-          <img src="myphoto.jpg" alt="my photo" class="myphoto" />
+        <div id="Home" class="card card--active">
+          <div class="card_img">
+            <img src="myphoto.jpg" alt="my photo" class="myphoto" />
+          </div>
+
+          <div class="personal_text">
+            <h6>Hello Everybody, i am</h6>
+            <h3>Jingshuai XU</h3>
+            <h4>Junior Web Developer</h4>
+            <p>Welcome to my personal web page!</p>
+
+            <ul class="personal_list">
+              <li>
+                <svg class="icon">
+                  <use xlink:href="#lnr-calendar-full"></use>
+                </svg>
+                <span class="value">15th Nov, 1992</span>
+              </li>
+
+              <li>
+                <svg class="icon">
+                  <use xlink:href="#lnr-phone-handset"></use>
+                </svg>
+                <span class="value">+61 414 051 021</span>
+              </li>
+
+              <li>
+                <svg class="icon"><use xlink:href="#lnr-envelope"></use></svg>
+                <span class="value">xujingshuai@gmail.com</span>
+              </li>
+
+              <li>
+                <svg class="icon"><use xlink:href="#lnr-home"></use></svg>
+                <span class="value">13 Rosedale Ave, Glenhuntly,3163</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="personal_text">
-          <h6>Hello Everybody, i am</h6>
-          <h3>Jingshuai XU</h3>
-          <h4>Junior Web Developer</h4>
-          <p>Welcome to my personal web page!</p>
+        <div id="Resume" class="resume__card">
+          <div class="resume__header">
+            <img src="resumephoto.jpeg" alt="my picture" id="pic" />
+            <div id="contact-info" class="vcard">
+              <h1 class="fn">ABOUT ME</h1>
+            </div>
 
-          <ul class="personal_list">
-            <li>
-              <svg class="icon">
-                <use xlink:href="#lnr-calendar-full"></use>
-              </svg>
-              <span class="value">15th Nov, 1992</span>
-            </li>
+            <div id="objective">
+              <p>
+                I am an outgoing and energetic (ask anybody) young professional,
+                seeking a career that fits my professional skills, personality,
+                and murderous tendencies. My squid-like head is a masterful
+                problem solver and inspires fear in who gaze upon it. I can
+                bring world domination to your organization.
+              </p>
+            </div>
+          </div>
 
-            <li>
-              <svg class="icon">
-                <use xlink:href="#lnr-phone-handset"></use>
-              </svg>
-              <span class="value">+61 414 051 021</span>
-            </li>
+          <div class="resume__content">
+            <div class="content__item">
+              <dl>
+                <dt>Education</dt>
+                <dd>
+                  <h2>
+                    Monash University - Information Technology
+                  </h2>
+                  <p>
+                    <strong>Major:</strong> Public Relations<br />
+                    <strong>Minor:</strong> Scale Tending
+                  </p>
+                </dd>
+              </dl>
+            </div>
+            <dd class="clear"></dd>
+            <div class="content__item">
+              <dl>
+                <dt>Skills</dt>
+                <dd>
+                  <h2>Office skills</h2>
+                  <p>
+                    Office and records management, database administration,
+                    event organization, customer support, travel coordination
+                  </p>
 
-            <li>
-              <svg class="icon"><use xlink:href="#lnr-envelope"></use></svg>
-              <span class="value">xujingshuai@gmail.com</span>
-            </li>
+                  <h2>Computer skills</h2>
+                  <p>
+                    Microsoft productivity software (Word, Excel, etc), Adobe
+                    Creative Suite, Windows
+                  </p>
+                </dd>
+              </dl>
+            </div>
+            <dd class="clear"></dd>
+            <div class="content__item">
+              <dl>
+                <dt>Experience</dt>
+                <dd>
+                  <h2>
+                    Doomsday Cult
+                    <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
+                  </h2>
+                  <ul>
+                    <li>
+                      Inspired and won highest peasant death competition among
+                      servants
+                    </li>
+                    <li>Helped coordinate managers to grow cult following</li>
+                    <li>Provided untimely deaths to all who opposed</li>
+                  </ul>
 
-            <li>
-              <svg class="icon"><use xlink:href="#lnr-home"></use></svg>
-              <span class="value">13 Rosedale Ave, Glenhuntly,3163</span>
-            </li>
-          </ul>
+                  <h2>
+                    The Watering Hole
+                    <span>Bartender/Server - Milwaukee, WI - 2009</span>
+                  </h2>
+                  <ul>
+                    <li>Worked on grass-roots promotional campaigns</li>
+                    <li>Reduced theft and property damage percentages</li>
+                    <li>Janitorial work, Laundry</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+
+            <dd class="clear"></dd>
+            <div class="content__item">
+              <dl>
+                <dt>Hobbies</dt>
+                <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+              </dl>
+            </div>
+
+            <dd class="clear"></dd>
+            <div class="content__item">
+              <dl>
+                <dt>References</dt>
+                <dd>Available on request</dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div id="Resume" class="resume__card">
-        <div class="resume__header">
-          <img src="resumephoto.jpeg" alt="my picture" id="pic" />
-          <div id="contact-info" class="vcard">
-            <h1 class="fn">ABOUT ME</h1>
-          </div>
-
-          <div id="objective">
-            <p>
-              I am an outgoing and energetic (ask anybody) young professional,
-              seeking a career that fits my professional skills, personality,
-              and murderous tendencies. My squid-like head is a masterful
-              problem solver and inspires fear in who gaze upon it. I can bring
-              world domination to your organization.
-            </p>
-          </div>
-        </div>
-
-        <div class="resume__content">
-          <div class="content__item">
-            <dl>
-              <dt>Education</dt>
-              <dd>
-                <h2>
-                  Monash University - Information Technology
-                </h2>
-                <p>
-                  <strong>Major:</strong> Public Relations<br />
-                  <strong>Minor:</strong> Scale Tending
-                </p>
-              </dd>
-            </dl>
-          </div>
-          <dd class="clear"></dd>
-          <div class="content__item">
-            <dl>
-              <dt>Skills</dt>
-              <dd>
-                <h2>Office skills</h2>
-                <p>
-                  Office and records management, database administration, event
-                  organization, customer support, travel coordination
-                </p>
-
-                <h2>Computer skills</h2>
-                <p>
-                  Microsoft productivity software (Word, Excel, etc), Adobe
-                  Creative Suite, Windows
-                </p>
-              </dd>
-            </dl>
-          </div>
-          <dd class="clear"></dd>
-          <div class="content__item">
-            <dl>
-              <dt>Experience</dt>
-              <dd>
-                <h2>
-                  Doomsday Cult
-                  <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
-                </h2>
-                <ul>
-                  <li>
-                    Inspired and won highest peasant death competition among
-                    servants
-                  </li>
-                  <li>Helped coordinate managers to grow cult following</li>
-                  <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-
-                <h2>
-                  The Watering Hole
-                  <span>Bartender/Server - Milwaukee, WI - 2009</span>
-                </h2>
-                <ul>
-                  <li>Worked on grass-roots promotional campaigns</li>
-                  <li>Reduced theft and property damage percentages</li>
-                  <li>Janitorial work, Laundry</li>
-                </ul>
-              </dd>
-            </dl>
-          </div>
-
-          <dd class="clear"></dd>
-          <div class="content__item">
-            <dl>
-              <dt>Hobbies</dt>
-              <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            </dl>
-          </div>
-
-          <dd class="clear"></dd>
-          <div class="content__item">
-            <dl>
-              <dt>References</dt>
-              <dd>Available on request</dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="navbar.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
