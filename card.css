@@ -133,6 +133,9 @@
 }
 
 @media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
   .myphoto {
     width: 300px;
     height: 300px;
