@@ -112,3 +112,52 @@ dd h2 {
 dd ul {
   padding: 10px;
 }
+
+@media (max-width: 991px) {
+  .resume__card {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 130px;
+    padding-top: 30px;
+  }
+
+  .content__item {
+    min-width: 450px;
+    min-height: 150px;
+  }
+
+  dt {
+    text-align: left;
+    padding: 0 26px 0 0;
+    float: left;
+    height: 30px;
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+
+  dd {
+    width: 500px;
+    float: left;
+    font: 16px Helvetica, Sans-Serif;
+    display: block;
+    margin-inline-start: none;
+    padding-top: 20px;
+  }
+
+  #objective p {
+    margin-right: 50px;
+  }
+
+  @media (max-width: 480px) {
+    .resume__card {
+      padding: 80px;
+      width: 100%;
+    }
+
+    dd {
+      width: 300px;
+    }
+  }
+}
