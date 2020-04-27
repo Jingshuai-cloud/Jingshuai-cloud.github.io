@@ -16,10 +16,12 @@
   background-color: aliceblue;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  display: block;
 }
 
 .card--active {
   position: relative;
+  transition: opacity 0.3s ease-in-out;
   top: 130px;
   opacity: 1;
 }
@@ -152,7 +154,7 @@ dd ul {
 
   @media (max-width: 480px) {
     .resume__card {
-      padding: 80px;
+      padding: 150px;
       width: 100%;
     }
 

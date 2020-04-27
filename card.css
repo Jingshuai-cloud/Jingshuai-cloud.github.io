@@ -15,11 +15,11 @@
   left: 0;
   right: 0;
   opacity: 0;
-  display: flex;
   flex-direction: row;
   background-color: aliceblue;
   justify-content: space-around;
   transition: opacity 0.3s ease-in-out;
+  display: flex;
 }
 
 .card--active {
@@ -113,6 +113,7 @@
     position: relative;
     top: 130px;
     padding-top: 30px;
+    justify-content: center;
   }
 
   .personal_text {
@@ -123,6 +124,7 @@
 @media (max-width: 575px) {
   .card {
     width: 100%;
+    min-width: 500px;
   }
   .myphoto {
     width: 350px;
