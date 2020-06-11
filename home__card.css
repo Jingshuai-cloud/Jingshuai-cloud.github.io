@@ -96,6 +96,10 @@
   margin: 10px;
 }
 
+.dd_layout {
+  display: flex;
+  flex-direction: column;
+}
 .icon {
   display: inline-block;
   fill: currentColor;
